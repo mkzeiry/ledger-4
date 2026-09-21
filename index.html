@@ -70,7 +70,7 @@
     .weekbar{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;height:118px;align-items:end;margin-top:10px}.barcol{display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end}.bar{width:100%;max-width:30px;border-radius:8px 8px 3px 3px;background:var(--accent);min-height:3px}.barcol span{font-size:10px;color:var(--muted)}
     .toast{position:fixed;left:50%;transform:translateX(-50%) translateY(20px);bottom:calc(var(--nav) + env(safe-area-inset-bottom) + 79px);background:rgba(44,44,46,.94);color:#fff;padding:10px 14px;border-radius:999px;font-size:13px;font-weight:600;opacity:0;pointer-events:none;transition:.22s;z-index:120;white-space:nowrap;box-shadow:0 8px 22px rgba(0,0,0,.16)}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
     .confidence{font-size:11px;padding:5px 8px;border-radius:999px;background:var(--panel2);color:var(--muted)}.photoActions{display:grid;grid-template-columns:1fr 1fr;gap:9px}.cameraLabel{display:block;text-align:center;background:var(--accent);color:#fff;padding:14px;border-radius:12px;font-weight:650;font-size:17px;margin-top:10px}.cameraLabel input{display:none}.divider{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:11px;margin:14px 0}.divider:before,.divider:after{content:"";height:.5px;background:var(--line);flex:1}
-    .scannerWrap{position:relative;width:100%;aspect-ratio:4/3;background:var(--scanner);border-radius:18px;overflow:hidden;margin:14px 0 10px}.scannerWrap video{width:100%;height:100%;object-fit:cover;display:block;background:var(--scanner)}.scanShade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,rgba(0,0,0,.22),transparent 22%,transparent 78%,rgba(0,0,0,.22))}.scanFrame{position:absolute;left:8%;right:8%;top:50%;height:42%;transform:translateY(-50%);border:2px solid rgba(255,255,255,.95);border-radius:18px;box-shadow:0 0 0 999px rgba(0,0,0,.18)}.scanFrame:before,.scanFrame:after{content:"";position:absolute;left:12%;right:12%;height:1px;background:rgba(255,255,255,.45)}.scanFrame:before{top:33%}.scanFrame:after{bottom:33%}.scanStatus{display:flex;align-items:center;gap:8px;min-height:24px;color:var(--muted);font-size:12px;line-height:1.4}.scanPulse{width:8px;height:8px;border-radius:50%;background:var(--warn);box-shadow:0 0 0 0 rgba(255,159,10,.45);animation:scanPulse 1.5s infinite}.scanPulse.live{background:var(--good)}@keyframes scanPulse{70%{box-shadow:0 0 0 7px rgba(255,159,10,0)}100%{box-shadow:0 0 0 0 rgba(255,159,10,0)}}.inlineButtons{display:grid;grid-template-columns:1fr 1fr;gap:9px}.scannerHelp{background:var(--panel);border-radius:14px;padding:12px 13px;color:var(--muted);font-size:12px;line-height:1.45;margin-top:10px;box-shadow:inset 0 0 0 .5px var(--line)}
+    .autoTag{font-size:10px;font-weight:700;color:var(--accent);background:var(--accent-soft);padding:3px 6px;border-radius:999px;margin-left:5px;vertical-align:1px}.valueInput input[readonly]{color:var(--soft);background:var(--panel2);font-weight:700}.scanRetry{margin-top:10px}.scanRetry.hidden{display:none!important}.scannerWrap{position:relative;width:100%;aspect-ratio:4/3;background:var(--scanner);border-radius:18px;overflow:hidden;margin:14px 0 10px}.scannerWrap video{width:100%;height:100%;object-fit:cover;display:block;background:var(--scanner)}.scanShade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,rgba(0,0,0,.22),transparent 22%,transparent 78%,rgba(0,0,0,.22))}.scanFrame{position:absolute;left:8%;right:8%;top:50%;height:42%;transform:translateY(-50%);border:2px solid rgba(255,255,255,.95);border-radius:18px;box-shadow:0 0 0 999px rgba(0,0,0,.18)}.scanFrame:before,.scanFrame:after{content:"";position:absolute;left:12%;right:12%;height:1px;background:rgba(255,255,255,.45)}.scanFrame:before{top:33%}.scanFrame:after{bottom:33%}.scanStatus{display:flex;align-items:center;gap:8px;min-height:24px;color:var(--muted);font-size:12px;line-height:1.4}.scanPulse{width:8px;height:8px;border-radius:50%;background:var(--warn);box-shadow:0 0 0 0 rgba(255,159,10,.45);animation:scanPulse 1.5s infinite}.scanPulse.live{background:var(--good)}@keyframes scanPulse{70%{box-shadow:0 0 0 7px rgba(255,159,10,0)}100%{box-shadow:0 0 0 0 rgba(255,159,10,0)}}.inlineButtons{display:grid;grid-template-columns:1fr 1fr;gap:9px}.scannerHelp{background:var(--panel);border-radius:14px;padding:12px 13px;color:var(--muted);font-size:12px;line-height:1.45;margin-top:10px;box-shadow:inset 0 0 0 .5px var(--line)}
     @media(max-width:370px){main{padding-left:13px;padding-right:13px}.topbar{padding-left:13px;padding-right:13px}.calnum{font-size:40px}.macrogrid{gap:7px}.fab{right:13px}.nav button{font-size:9px}.kpis{grid-template-columns:repeat(2,1fr)}}
     @media(min-width:430px){main{padding-left:20px;padding-right:20px}.topbar{padding-left:20px;padding-right:20px}.macrogrid{grid-template-columns:repeat(4,1fr)}.macro{padding:11px 9px}.fab{right:max(20px,calc((100vw - 520px)/2 + 20px))}}
     @media(min-width:700px){.app{box-shadow:0 0 0 .5px var(--line);min-height:100vh}.nav{border-left:.5px solid var(--line);border-right:.5px solid var(--line)}}
@@ -84,7 +84,7 @@
 <body>
 <div class="app">
   <header class="topbar">
-    <div class="toprow"><div><div class="brandline"><div class="brand">Nourish</div><span id="appVersion" class="versionBadge">v3.0</span></div><div id="headerDate" class="date"></div></div><button class="iconbtn" id="settingsBtn" aria-label="Settings"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.86 2.86-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21H10.4v-.1A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06-2.86-2.86.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3v-3.2h.1A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.88l-.06-.06L7.06 4.2l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3h3.2v.1A1.7 1.7 0 0 0 15 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06 2.86 2.86-.06.06A1.7 1.7 0 0 0 19.4 9c.13.38.36.73.66 1 .3.27.69.4 1.1.4h.1v3.2h-.1a1.7 1.7 0 0 0-1.76 1.4Z"></path></svg></button></div>
+    <div class="toprow"><div><div class="brandline"><div class="brand">Nourish</div><span id="appVersion" class="versionBadge">v3.1</span></div><div id="headerDate" class="date"></div></div><button class="iconbtn" id="settingsBtn" aria-label="Settings"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.86 2.86-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21H10.4v-.1A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06-2.86-2.86.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3v-3.2h.1A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.88l-.06-.06L7.06 4.2l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3h3.2v.1A1.7 1.7 0 0 0 15 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06 2.86 2.86-.06.06A1.7 1.7 0 0 0 19.4 9c.13.38.36.73.66 1 .3.27.69.4 1.1.4h.1v3.2h-.1a1.7 1.7 0 0 0-1.76 1.4Z"></path></svg></button></div>
   </header>
   <main>
     <section id="page-today" class="page active">
@@ -125,10 +125,10 @@
       <h1 class="bigTitle">Settings</h1>
       <div class="sectionLabel">Appearance</div><div class="iosGroup"><div class="settingStack"><div class="rowTitle">Theme</div><div class="segmented" id="themeSegment"><button type="button" data-theme-choice="system" onclick="setTheme('system')">Automatic</button><button type="button" data-theme-choice="light" onclick="setTheme('light')">Light</button><button type="button" data-theme-choice="dark" onclick="setTheme('dark')">Dark</button></div></div></div>
       <p class="hint" style="margin-left:16px;margin-right:16px">Automatic follows your iPhone appearance setting.</p>
-      <div class="sectionLabel">Daily targets</div><div class="iosGroup"><div class="settingRow"><label for="setCalories">Calories</label><div class="valueInput"><input id="setCalories" type="number" inputmode="decimal"><span>kcal</span></div></div><div class="settingRow"><label for="setProtein">Protein</label><div class="valueInput"><input id="setProtein" type="number" inputmode="decimal"><span>g</span></div></div><div class="settingRow"><label for="setCarbs">Carbs</label><div class="valueInput"><input id="setCarbs" type="number" inputmode="decimal"><span>g</span></div></div><div class="settingRow"><label for="setFat">Fat</label><div class="valueInput"><input id="setFat" type="number" inputmode="decimal"><span>g</span></div></div><div class="settingRow"><label for="setFiber">Fiber</label><div class="valueInput"><input id="setFiber" type="number" inputmode="decimal"><span>g</span></div></div></div><button class="primary" id="saveTargets">Save targets</button>
+      <div class="sectionLabel">Daily targets</div><div class="iosGroup"><div class="settingRow"><label for="setCalories">Calories <small class="autoTag">Automatic</small></label><div class="valueInput"><input id="setCalories" type="number" inputmode="decimal" readonly aria-readonly="true"><span>kcal</span></div></div><div class="settingRow"><label for="setProtein">Protein</label><div class="valueInput"><input id="setProtein" type="number" inputmode="decimal" step="0.1"><span>g</span></div></div><div class="settingRow"><label for="setCarbs">Carbs</label><div class="valueInput"><input id="setCarbs" type="number" inputmode="decimal" step="0.1"><span>g</span></div></div><div class="settingRow"><label for="setFat">Fat</label><div class="valueInput"><input id="setFat" type="number" inputmode="decimal" step="0.1"><span>g</span></div></div><div class="settingRow"><label for="setFiber">Fiber</label><div class="valueInput"><input id="setFiber" type="number" inputmode="decimal" step="0.1"><span>g</span></div></div></div><p class="hint" style="margin-left:16px;margin-right:16px">Calories are calculated automatically from protein × 4 + carbs × 4 + fat × 9. Fiber is tracked separately and is not added again.</p><button class="primary" id="saveTargets">Save targets</button>
       <div class="sectionLabel">AI photo & description</div><div class="iosGroup"><div class="aiStatus"><span id="aiDot" class="statusDot"></span><div><b>Secure AI endpoint</b><p>Nourish can send a food photo or natural-language description to your own secure backend. Leave blank to use the local parser and manual photo review.</p></div></div><div class="settingStack"><div class="field" style="margin:0"><label>Endpoint URL</label><input id="setAIEndpoint" type="url" placeholder="https://your-domain.com/api/nourish-ai"></div></div></div><button class="primary" id="saveAISettings">Save AI connection</button>
       <div class="sectionLabel">Data</div><div class="iosGroup"><button class="settingsAction" id="exportData">Export backup</button><label class="settingsAction">Import backup<input id="importData" type="file" accept="application/json"></label><button class="settingsAction dangerText" id="resetData">Reset all data</button></div>
-      <p class="hint" style="margin:12px 16px 0">Diary, foods, recipes and weight are stored locally on this device. Online food search and barcode lookup use Open Food Facts. App version <strong id="settingsVersion">v3.0</strong>.</p>
+      <p class="hint" style="margin:12px 16px 0">Diary, foods, recipes and weight are stored locally on this device. Online food search and barcode lookup use Open Food Facts. App version <strong id="settingsVersion">v3.1</strong>.</p>
     </section>
   </main>
 </div>
@@ -143,7 +143,7 @@
 <div id="toast" class="toast"></div><div id="sheetBack" class="sheetBack" role="dialog" aria-modal="true"><div class="sheet"><div class="handle"></div><div id="sheetContent"></div></div></div>
 <script src="https://unpkg.com/@zxing/library@0.21.3/umd/index.min.js"></script>
 <script>
-const APP_VERSION='v3.0';
+const APP_VERSION='v3.1';
 const KEY='nourish-data-v1';
 const THEME_KEY='nourish-theme';
 const meals=['Breakfast','Lunch','Dinner','Snacks'];
@@ -234,9 +234,10 @@ function defaultData(){return{
   favoriteFoodIds:[],favoriteMealIds:[],favoriteRecipeIds:[],recentIds:[],settings:{aiEndpoint:''},version:3
 }}
 function normalizeData(raw){
-  const d=defaultData(),x=raw&&typeof raw==='object'?raw:{};
+  const d=defaultData(),x=raw&&typeof raw==='object'?raw:{},targets={...d.targets,...(x.targets||{})};
+  targets.kcal=calorieTargetFromMacros(targets.p,targets.c,targets.f);
   return {...d,...x,
-    targets:{...d.targets,...(x.targets||{})},settings:{...d.settings,...(x.settings||{})},
+    targets,settings:{...d.settings,...(x.settings||{})},
     logs:Array.isArray(x.logs)?x.logs:[],customFoods:Array.isArray(x.customFoods)?x.customFoods:[],savedMeals:Array.isArray(x.savedMeals)?x.savedMeals:[],
     recipes:Array.isArray(x.recipes)?x.recipes:[],weights:Array.isArray(x.weights)?x.weights:[],
     favoriteFoodIds:Array.isArray(x.favoriteFoodIds)?x.favoriteFoodIds:[],favoriteMealIds:Array.isArray(x.favoriteMealIds)?x.favoriteMealIds:[],favoriteRecipeIds:Array.isArray(x.favoriteRecipeIds)?x.favoriteRecipeIds:[]
@@ -246,7 +247,7 @@ function load(){try{return normalizeData(JSON.parse(localStorage.getItem(KEY)||'
 let db=load();
 let activePage='today',activeFoodTab='favorites',selectedDate=todayKey(),diaryFilter='All',insightRange=7;
 let draft=[],draftDate=todayKey(),pendingPhoto=null,currentMeal=guessMeal(),draftSource='Entry';
-let barcodeReader=null,barcodeScanLocked=false,searchTimer=null,searchSeq=0;
+let barcodeReader=null,barcodeStream=null,barcodeScanLocked=false,searchTimer=null,searchSeq=0;
 let remoteFoods=new Map(),savedMealEditor=null,recipeEditor=null,ingredientEditorType=null;
 
 function save(render=true){localStorage.setItem(KEY,JSON.stringify(db));if(render)renderAll()}
@@ -261,6 +262,7 @@ function prettyDate(k,short=false){const d=parseKey(k);if(k===todayKey())return 
 function guessMeal(){const h=new Date().getHours();return h<11?'Breakfast':h<16?'Lunch':h<21?'Dinner':'Snacks'}
 function totals(logs){return (logs||[]).reduce((a,x)=>{a.kcal+=+x.kcal||0;a.p+=+x.p||0;a.c+=+x.c||0;a.f+=+x.f||0;a.fi+=+x.fi||0;return a},{kcal:0,p:0,c:0,f:0,fi:0})}
 function density(x){return x.kcal>0?Math.round((x.p*4/x.kcal)*100):0}
+function calorieTargetFromMacros(p,c,f){return Math.round((Number(p)||0)*4+(Number(c)||0)*4+(Number(f)||0)*9)}
 function dayLogs(key=todayKey()){return db.logs.filter(x=>x.date===key)}
 function allFoods(){return [...db.customFoods,...builtins]}
 function findFood(id){return allFoods().find(x=>x.id===id)||remoteFoods.get(id)}
@@ -379,8 +381,9 @@ function addWeight(){show(`${subHead('Log weight')}<div class="field"><label>Dat
 function saveWeight(){const date=$('weightDate').value,kg=+$('weightKg').value;if(!date||!(kg>0)){toast('Enter a valid weight');return}const existing=db.weights.find(w=>w.date===date);if(existing)existing.kg=kg;else db.weights.push({id:uid('w'),date,kg});save();closeSheet();toast('Weight saved')}
 function deleteWeight(id){if(!confirm('Delete this weight entry?'))return;db.weights=db.weights.filter(w=>w.id!==id);save()}
 
-function renderSettings(){const t=db.targets;$('setCalories').value=t.kcal;$('setProtein').value=t.p;$('setCarbs').value=t.c;$('setFat').value=t.f;$('setFiber').value=t.fi;$('setAIEndpoint').value=db.settings.aiEndpoint||'';$('settingsVersion').textContent=APP_VERSION;const dot=$('aiDot');if(dot)dot.classList.toggle('on',!!db.settings.aiEndpoint);applyTheme(getThemeChoice())}
-function saveTargets(){db.targets={kcal:+$('setCalories').value||0,p:+$('setProtein').value||0,c:+$('setCarbs').value||0,f:+$('setFat').value||0,fi:+$('setFiber').value||0};save();toast('Targets saved')}
+function recalcTargetCalories(){const el=$('setCalories');if(!el)return;el.value=calorieTargetFromMacros($('setProtein')?.value,$('setCarbs')?.value,$('setFat')?.value)}
+function renderSettings(){const t=db.targets;$('setProtein').value=t.p;$('setCarbs').value=t.c;$('setFat').value=t.f;$('setFiber').value=t.fi;recalcTargetCalories();$('setAIEndpoint').value=db.settings.aiEndpoint||'';$('settingsVersion').textContent=APP_VERSION;const dot=$('aiDot');if(dot)dot.classList.toggle('on',!!db.settings.aiEndpoint);applyTheme(getThemeChoice())}
+function saveTargets(){const p=+$('setProtein').value||0,c=+$('setCarbs').value||0,f=+$('setFat').value||0,fi=+$('setFiber').value||0;db.targets={kcal:calorieTargetFromMacros(p,c,f),p,c,f,fi};recalcTargetCalories();save();toast('Targets saved')}
 function saveAISettings(){db.settings.aiEndpoint=($('setAIEndpoint').value||'').trim();save();toast(db.settings.aiEndpoint?'AI endpoint saved':'AI endpoint cleared')}
 
 function nav(page){activePage=page;qa('.page').forEach(x=>x.classList.remove('active'));$('page-'+page).classList.add('active');qa('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.page===page));$('fab').classList.toggle('hidden',page==='settings'||page==='insights'||page==='foods');if(page==='diary')renderDiary();if(page==='foods')renderFoods();if(page==='insights')renderInsights();window.scrollTo({top:0,behavior:'instant'})}
@@ -421,10 +424,34 @@ function applyPortion(inputId,val){const el=$(inputId);if(el)el.value=val;const 
 function frequentAmounts(foodId){const counts=new Map();db.logs.filter(x=>x.foodId===foodId).slice(-60).forEach(x=>counts.set(+x.amount,(counts.get(+x.amount)||0)+1));return [...counts.entries()].sort((a,b)=>b[1]-a[1]).slice(0,3).map(x=>x[0])}
 function defaultAmount(f){return +f.servingAmount||+(f.portions?.[0]?.[1])||+f.per||100}
 
-function barcodeMode(){show(`${subHead('Scan barcode')}<div class="scannerWrap"><video id="barcodeVideo" playsinline muted></video><div class="scanShade"></div><div class="scanFrame"></div></div><div id="scanStatus" class="scanStatus"><span class="scanPulse"></span><span>Starting camera…</span></div><div class="inlineButtons"><label class="secondary fileButton">Scan from photo<input type="file" accept="image/*" onchange="scanBarcodeImage(this.files[0])"></label><button class="secondary" onclick="manualBarcode()">Type code</button></div><div class="scannerHelp">Hold the barcode inside the frame. The rear camera will detect it automatically.</div>`);setTimeout(startBarcodeScanner,80)}
+function barcodeMode(){show(`${subHead('Scan barcode')}<div class="scannerWrap"><video id="barcodeVideo" autoplay playsinline muted></video><div class="scanShade"></div><div class="scanFrame"></div></div><div id="scanStatus" class="scanStatus"><span class="scanPulse"></span><span>Requesting camera access…</span></div><button id="cameraRetryBtn" class="secondary scanRetry hidden" onclick="startBarcodeScanner()">Try camera again</button><div class="inlineButtons"><label class="secondary fileButton">Scan from photo<input type="file" accept="image/*" onchange="scanBarcodeImage(this.files[0])"></label><button class="secondary" onclick="manualBarcode()">Type code</button></div><div class="scannerHelp">With iPhone Camera permission set to <b>Ask</b>, tapping Barcode should trigger the permission prompt. Hold the barcode inside the frame after allowing access.</div>`);startBarcodeScanner()}
 function setScanStatus(text,live=false){const el=$('scanStatus');if(el)el.innerHTML=`<span class="scanPulse ${live?'live':''}"></span><span>${esc(text)}</span>`}
-async function startBarcodeScanner(){stopBarcodeScanner();barcodeScanLocked=false;if(!window.ZXing){setScanStatus('Scanner library could not load. Use photo or type code.');return}try{barcodeReader=new ZXing.BrowserMultiFormatReader();const devices=await ZXing.BrowserCodeReader.listVideoInputDevices();const rear=devices.find(d=>/back|rear|environment/i.test(d.label))||devices.at(-1);setScanStatus('Camera ready — point at a barcode',true);await barcodeReader.decodeFromVideoDevice(rear?.deviceId||undefined,'barcodeVideo',(result,err)=>{if(result&&!barcodeScanLocked){barcodeScanLocked=true;lookupBarcode(result.getText())}})}catch(e){setScanStatus('Camera unavailable. Check Safari camera permission or use photo.')}}
-function stopBarcodeScanner(){try{barcodeReader?.reset()}catch(e){}barcodeReader=null}
+function setCameraRetry(showIt=true){const b=$('cameraRetryBtn');if(b)b.classList.toggle('hidden',!showIt)}
+async function startBarcodeScanner(){
+  stopBarcodeScanner();barcodeScanLocked=false;setCameraRetry(false);
+  if(!navigator.mediaDevices?.getUserMedia){setScanStatus('Camera access is not supported here. Use photo or type code.');setCameraRetry(true);return}
+  if(!window.isSecureContext){setScanStatus('Camera requires a secure HTTPS page.');setCameraRetry(true);return}
+  try{
+    setScanStatus('Waiting for camera permission…');
+    const streamPromise=navigator.mediaDevices.getUserMedia({audio:false,video:{facingMode:{ideal:'environment'},width:{ideal:1280},height:{ideal:720}}});
+    barcodeStream=await streamPromise;
+    const video=$('barcodeVideo');
+    if(!video){barcodeStream.getTracks().forEach(t=>t.stop());barcodeStream=null;return}
+    video.srcObject=barcodeStream;video.muted=true;video.setAttribute('playsinline','true');video.setAttribute('autoplay','true');
+    try{await video.play()}catch(e){}
+    if(!window.ZXing){setScanStatus('Camera opened, but the scanner library could not load. Use photo or type code.');setCameraRetry(true);return}
+    barcodeReader=new ZXing.BrowserMultiFormatReader();
+    setScanStatus('Camera ready — point at a barcode',true);
+    await barcodeReader.decodeFromStream(barcodeStream,video,(result,err)=>{if(result&&!barcodeScanLocked){barcodeScanLocked=true;lookupBarcode(result.getText())}})
+  }catch(e){
+    const name=e?.name||'';
+    if(name==='NotAllowedError'||name==='SecurityError')setScanStatus('Camera permission was not granted. Keep Camera set to Ask, then tap Try camera again. If iOS still does not show the prompt, fully close and reopen Nourish once.');
+    else if(name==='NotFoundError'||name==='OverconstrainedError')setScanStatus('No usable rear camera was found. Use photo or type code.');
+    else setScanStatus('Camera could not start. Tap Try camera again or use photo.');
+    setCameraRetry(true)
+  }
+}
+function stopBarcodeScanner(){try{barcodeReader?.reset()}catch(e){}barcodeReader=null;try{barcodeStream?.getTracks().forEach(t=>t.stop())}catch(e){}barcodeStream=null;const v=$('barcodeVideo');if(v)try{v.srcObject=null}catch(e){}}
 function manualBarcode(){stopBarcodeScanner();show(`${subHead('Enter barcode')}<div class="field"><label>Barcode number</label><input id="barcodeText" inputmode="numeric" placeholder="629…"></div><button class="primary" onclick="lookupBarcode($('barcodeText').value)">Look up product</button>`)}
 async function scanBarcodeImage(file){if(!file)return;if(!window.ZXing){toast('Scanner library unavailable');return}try{setScanStatus('Reading image…');const url=URL.createObjectURL(file),r=new ZXing.BrowserMultiFormatReader(),res=await r.decodeFromImageUrl(url);URL.revokeObjectURL(url);lookupBarcode(res.getText())}catch(e){toast('Could not read barcode from photo')}}
 async function lookupBarcode(code){code=String(code||'').trim();if(!code){toast('Enter a barcode');return}const saved=db.customFoods.find(x=>String(x.barcode||'')===code);if(saved){stopBarcodeScanner();draft=[draftItem(saved,defaultAmount(saved))];draftSource='Saved barcode';reviewDraft('Saved barcode');return}setScanStatus('Looking up product…',true);try{const r=await fetch(`https://world.openfoodfacts.org/api/v2/product/${encodeURIComponent(code)}.json?fields=code,product_name,brands,nutriments,serving_size,serving_quantity,product_quantity,product_quantity_unit,quantity`);if(!r.ok)throw new Error();const j=await r.json();if(j.status!==1)throw new Error();let f=foodFromOFFProduct(j.product,code);if(!f)throw new Error();f={...f,id:'off'+code,barcode:code};db.customFoods.unshift(f);save(false);stopBarcodeScanner();draft=[draftItem(f,defaultAmount(f))];draftSource='Barcode';reviewDraft('Barcode match')}catch(e){stopBarcodeScanner();manualProduct(code)}}
@@ -456,6 +483,7 @@ $('sheetBack').addEventListener('click',e=>{if(e.target===$('sheetBack'))closeSh
 $('diaryDate').addEventListener('change',e=>setDiaryDate(e.target.value));
 $('prevDayBtn').addEventListener('click',()=>moveDiaryDay(-1));$('nextDayBtn').addEventListener('click',()=>moveDiaryDay(1));$('todayDateBtn').addEventListener('click',()=>setDiaryDate(todayKey()));
 $('copyPrevDayBtn').addEventListener('click',()=>copyPreviousDay(selectedDate));
+['setProtein','setCarbs','setFat'].forEach(id=>$(id).addEventListener('input',recalcTargetCalories));
 $('saveTargets').addEventListener('click',saveTargets);$('saveAISettings').addEventListener('click',saveAISettings);$('exportData').addEventListener('click',saveBackup);$('importData').addEventListener('change',e=>importBackup(e.target.files[0]));$('resetData').addEventListener('click',resetData);
 let touchX=null;$('diaryList').addEventListener('touchstart',e=>{touchX=e.changedTouches[0].clientX},{passive:true});$('diaryList').addEventListener('touchend',e=>{if(touchX==null)return;const dx=e.changedTouches[0].clientX-touchX;touchX=null;if(Math.abs(dx)>80){if(dx>0)moveDiaryDay(-1);else if(selectedDate<todayKey())moveDiaryDay(1)}},{passive:true});
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}))}
